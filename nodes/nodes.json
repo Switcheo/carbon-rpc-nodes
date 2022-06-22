@@ -1,6 +1,7 @@
 {
   "network": "",
   "nodes": [{
-    "name": ""
+    "name": "",
+    "address": ""
   }]
 }
