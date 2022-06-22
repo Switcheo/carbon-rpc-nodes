@@ -1,0 +1,43 @@
+{
+  "$id": "https://switcheo.zone/nodes.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Public Nodes list",
+  "description": "Sample node list schema",
+  "type": "object",
+  "required": [
+      "network",
+      "nodes"
+  ],
+  "properties": {
+      "network": {
+          "type": "string"
+      },
+      "nodes": {
+          "type": "array",
+          "items": {
+              "$ref": "#/$defs/node"
+          }
+      }
+  },
+  "$defs": {
+      "node": {
+          "type": "object",
+          "required": [
+              "name",
+              "address"
+          ],
+          "properties": {
+              "name": {
+                  "type": "string",
+                  "description": "[OPTIONAL] A short description of the asset"
+              },
+              "address": {
+                  "type": "array",
+                  "items": {
+                      "$ref": "#/$defs/denom_unit"
+                  }
+              }
+          }
+      }
+  }
+}
