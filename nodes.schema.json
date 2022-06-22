@@ -29,13 +29,11 @@
           "properties": {
               "name": {
                   "type": "string",
-                  "description": "[OPTIONAL] A short description of the asset"
+                  "description": "Name of node"
               },
               "address": {
-                  "type": "array",
-                  "items": {
-                      "$ref": "#/$defs/denom_unit"
-                  }
+                  "type": "string",
+                  "description": "Address of node"
               }
           }
       }
