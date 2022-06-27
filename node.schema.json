@@ -1,0 +1,129 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://example.com/schema.json",
+    "title": "Node Lists",
+    "description": "Node Lists allow frontends to fetch metadata associated with Carbon nodes.",
+    "type": "object",
+    "required": [
+        "network",
+        "nodes"
+    ],
+    "properties": {
+        "network": {
+            "type": "string",
+            "enum": [
+                "mainnet",
+                "testnet",
+                "devnet"
+            ]
+        },
+        "nodes": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/node"
+            }
+        }
+    },
+    "$defs": {
+        "node": {
+            "type": "object",
+            "required": [
+                "nodeId",
+                "rpcUrl",
+                "wsUrl",
+                "faucetUrl",
+                "insightsUrl",
+                "restUrl",
+                "moniker",
+                "appBuild",
+                "lastupdated",
+                "rpcUptime",
+                "wsUptime",
+                "insightUptime",
+                "tmWsUrl",
+                "creator"
+            ],
+            "properties": {
+                "description": {
+                    "type": "string",
+                    "description": "[OPTIONAL] A short description of the node"
+                },
+                "nodeId": {
+                    "type": "string",
+                    "description": "The nodeId of the node"
+                },
+                "prcUrl": {
+                    "type": "string",
+                    "description": "The PRC Url of the node"
+                },
+                "wsUrl": {
+                    "type": "string",
+                    "description": "The WS Url of the node"
+                },
+                "faucetUrl": {
+                    "type": "string",
+                    "description": "The Faucet URL of the node"
+                },
+                "insightsUrl": {
+                    "type": "string",
+                    "description": "The Insights URL of the node"
+                },
+                "restUrl": {
+                    "type": "string",
+                    "description": "The REST URL of the node"
+                },
+                "moniker": {
+                    "type": "string",
+                    "description": "The moniker of the node"
+                },
+                "appBuild": {
+                    "type": "string",
+                    "description": "The app build of the node"
+                },
+                "lastupdated": {
+                    "type": "string",
+                    "description": "The string representation of timestamp"
+                },
+                "rpcUptime": {
+                    "type": "string",
+                    "description": "The string representation of number"
+                },
+                "wsUptime": {
+                    "type": "string",
+                    "description": "The string representation of number"
+                },
+                "insightUptime": {
+                    "type": "string",
+                    "description": "The string representation of number"
+                },
+                "tmWsUrl": {
+                    "type": "string",
+                    "description": ""
+                },
+                "creator": {
+                    "type": "object",
+                    "description": "The details of the creator",
+                    "required": [
+                        "name",
+                        "telegram"
+                    ],
+                    "properties": {
+                        "name": {
+                            "type": "string",
+                            "description": "The name of the creator"
+                        },
+                        "telegram": {
+                            "type": "string",
+                            "description": "The telegram handle of the creator (without @)"
+                        },
+                        "email": {
+                            "type": "string",
+                            "description": "The email address of the creator",
+                            "format": "email"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
