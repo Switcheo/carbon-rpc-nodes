@@ -1,13 +1,9 @@
 on:
-  push:
+  pull_request:
     branches:
+      - master
       - 'feat/setup-repo'
-      - 'test'
-  # pull_request:
-  #   branches:
-  #     - master
-# name: Pull request workflow
-name: Push workflow
+name: Pull request workflow
 jobs:
   validate_nodes:
     name: Validate nodes
@@ -19,4 +15,4 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           json_schema: ./node.schema.json
-          json_path_pattern: .*publicNodes.json
+          json_path_pattern: .*publicNodes.json$
