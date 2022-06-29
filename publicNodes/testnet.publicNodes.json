@@ -22,50 +22,6 @@
                 "telegram": "thisis_a_username",
                 "email": "example@example.com"
             }
-        },
-        {
-            "description": "This is another string",
-            "nodeId": "This is another string",
-            "rpcUrl": "This is another string",
-            "wsUrl": "This is another string",
-            "faucetUrl": "This is another string",
-            "insightsUrl": "This is another string",
-            "restUrl": "This is another string",
-            "moniker": "This is another string",
-            "appBuild": "This is another string",
-            "lastupdated": "This is another string",
-            "rpcUptime": "This is another string",
-            "wsUptime": "This is another string",
-            "insightUptime": "This is another string",
-            "tmWsUrl": "This is another string",
-            "creator": {
-                "description": "This is another string",
-                "name": "This is another string",
-                "telegram": "This is another string",
-                "email": "test@example.com"
-            }
-        },
-        {
-            "description": "This is the third node in testnet",
-            "nodeId": "This is another string",
-            "rpcUrl": "This is another string",
-            "wsUrl": "This is another string",
-            "faucetUrl": "This is another string",
-            "insightsUrl": "This is another string",
-            "restUrl": "This is another string",
-            "moniker": "This is another string",
-            "appBuild": "This is another string",
-            "lastupdated": "This is another string",
-            "rpcUptime": "This is another string",
-            "wsUptime": "This is another string",
-            "insightUptime": "This is another string",
-            "tmWsUrl": "This is another string",
-            "creator": {
-                "description": "This is another string",
-                "name": "This is another string",
-                "telegram": "This is another string",
-                "email": "a@b.cd"
-            }
         }
     ]
 }
