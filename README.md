@@ -37,7 +37,7 @@ An example node JSON follows the structure below:
 
 ## How to add node details
 1. Open the folder `publicNodes`.
-2. Depending on the network, choose `publicNodes-<network>.json`. For example, pick `publicNodes-mainnet.json` if you wish to add a node in ***mainnet***.
+2. Depending on the network, choose `<network>.publicNodes.json`. For example, pick `mainnet.publicNodes.json` if you wish to add a node in ***mainnet***.
 3. Add the node details by adding another element in the nodes array according to the structure above. For example:
 
 ```
