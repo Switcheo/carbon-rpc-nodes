@@ -24,12 +24,12 @@ An example node JSON follows the structure below:
             "wsUptime": "This is a string",
             "insightUptime": "This is a string",
             "tmWsUrl": "This is a string",
-            "creator": [
-                "description: "This is a string"
-                "name": "This is a string"
-                "telegram": "This is a string"
+            "creator": {
+                "description": "This is a string",
+                "name": "This is a string",
+                "telegram": "This is a string",
                 "email": "This is an optional email"
-            ]
+            }
         }
     ]
 }
@@ -57,12 +57,12 @@ An example node JSON follows the structure below:
         "wsUptime": "This is a string",
         "insightUptime": "This is a string",
         "tmWsUrl": "This is a string",
-        "creator": [
-            "description: "This is a string"
-            "name": "This is a string"
-            "telegram": "This is a string"
+        "creator": {
+            "description": "This is a string",
+            "name": "This is a string",
+            "telegram": "This is a string",
             "email": "This is an optional email"
-        ]
+        }
     }, // ADD THE NEW NODE HERE
     {
         "description": "This is another string",
@@ -79,12 +79,12 @@ An example node JSON follows the structure below:
         "wsUptime": "This is another string",
         "insightUptime": "This is another string",
         "tmWsUrl": "This is another string",
-        "creator": [
-            "description: "This is another string"
-            "name": "This is another string"
-            "telegram": "This is another string"
+        "creator": {
+            "description": "This is another string",
+            "name": "This is another string",
+            "telegram": "This is another string",
             "email": "This is another optional email"
-        ]
+        }
     }
 ]
 ```
