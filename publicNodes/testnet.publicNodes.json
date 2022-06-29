@@ -1,4 +1,9 @@
 {
     "network": "testnet",
-    "nodes": []
+    "nodes": [
+        {
+            "description": "this is a test node",
+            "nodeId": "test"
+        }
+    ]
 }
