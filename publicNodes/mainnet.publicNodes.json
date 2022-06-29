@@ -1,4 +1,26 @@
 {
     "network": "mainnet",
-    "nodes": []
+    "nodes": [
+        {
+            "description": "This is a string",
+            "nodeId": "This is a string",
+            "rpcUrl": "This is a string",
+            "wsUrl": "This is a string",
+            "faucetUrl": "This is a string",
+            "insightsUrl": "This is a string",
+            "restUrl": "This is a string",
+            "moniker": "This is a string",
+            "appBuild": "This is a string",
+            "lastupdated": "This is a string",
+            "rpcUptime": "This is a string",
+            "wsUptime": "This is a string",
+            "insightUptime": "This is a string",
+            "tmWsUrl": "This is a string",
+            "creator": {
+                "description": "This is a string",
+                "name": "This is a string",
+                "telegram": "This is a string"
+            }
+        }
+    ]
 }
