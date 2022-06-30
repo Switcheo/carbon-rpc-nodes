@@ -20,7 +20,7 @@
                 "description": "This is a string",
                 "name": "This is a string",
                 "telegram": "This is a string",
-                "email": "This is an optional email"
+                "email": "example@example.com"
             }
         },
         {
