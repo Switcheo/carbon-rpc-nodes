@@ -119,7 +119,10 @@
                         "email": {
                             "type": "string",
                             "description": "The email address of the creator",
-                            "format": "email"
+                            "format": "email",
+                            "pattern": "^\\S+@\\S+\\.\\S+$",
+                            "minLength": 6,
+                            "maxLength": 127
                         }
                     }
                 }
