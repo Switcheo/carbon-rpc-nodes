@@ -7,7 +7,7 @@ An example node JSON follows the structure below:
 
 ```
 {
-    "network": "This is a string"
+    "network": "testnet"
     "nodes": [
         {
             "description": "This is an example of accurate node details",
