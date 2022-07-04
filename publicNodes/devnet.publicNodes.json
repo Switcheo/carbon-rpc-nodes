@@ -3,7 +3,7 @@
     "nodes": [
         {
             "description": "This is an example of accurate node details",
-            "nodeId": "dev1",
+            "nodeId": "devnet1",
             "rpcUrl": "https://dev-tm-api.carbon.network",
             "wsUrl": "wss://dev-ws-api.carbon.network/ws",
             "faucetUrl": "https://dev-faucet.carbon.network",

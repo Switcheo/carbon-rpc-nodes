@@ -17,7 +17,7 @@
             "tmWsUrl": "wss://xx-tm-api.carbon.network",
             "creator": {
                 "name": "This is a name",
-                "telegram": "thisis_a_username",
+                "telegram": "thisisausername",
                 "email": "myemail@example.com"
             }
         }
