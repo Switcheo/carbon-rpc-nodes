@@ -44,6 +44,72 @@
                 "telegram": "this.isausername",
                 "email": "thisisanemail"
             }
+        },
+        {
+            "description": "Check lastupdated",
+            "nodeId": "test1",
+            "rpcUrl": "https://test-tm-api.carbon.network",
+            "wsUrl": "wss://test-ws-api.carbon.network/ws",
+            "faucetUrl": "https://test-faucet.carbon.network",
+            "insightsUrl": "https://test-api-insights.carbon.network",
+            "restUrl": "https://test-api.carbon.network",
+            "moniker": "testnet default 1",
+            "appBuild": "testnet",
+            "lastupdated": "2022",
+            "rpcUptime": "100",
+            "wsUptime": "100",
+            "insightUptime": "100",
+            "tmWsUrl": "wss://test-tm-api.carbon.network",
+            "creator": {
+                "description": "These are contact details of the creator",
+                "name": "This is a name",
+                "telegram": "thisis_a_username",
+                "email": "example@example.com"
+            }
+        },
+        {
+            "description": "Check lastupdated",
+            "nodeId": "test1",
+            "rpcUrl": "https://test-tm-api.carbon.network",
+            "wsUrl": "wss://test-ws-api.carbon.network/ws",
+            "faucetUrl": "https://test-faucet.carbon.network",
+            "insightsUrl": "https://test-api-insights.carbon.network",
+            "restUrl": "https://test-api.carbon.network",
+            "moniker": "testnet default 1",
+            "appBuild": "testnet",
+            "lastupdated":"07-01-2022T03:42:00.123Z",
+            "rpcUptime": "100",
+            "wsUptime": "100",
+            "insightUptime": "100",
+            "tmWsUrl": "wss://test-tm-api.carbon.network",
+            "creator": {
+                "description": "These are contact details of the creator",
+                "name": "This is a name",
+                "telegram": "thisis_a_username",
+                "email": "example@example.com"
+            }
+        },
+        {
+            "description": "Check lastupdated",
+            "nodeId": "test1",
+            "rpcUrl": "https://test-tm-api.carbon.network",
+            "wsUrl": "wss://test-ws-api.carbon.network/ws",
+            "faucetUrl": "https://test-faucet.carbon.network",
+            "insightsUrl": "https://test-api-insights.carbon.network",
+            "restUrl": "https://test-api.carbon.network",
+            "moniker": "testnet default 1",
+            "appBuild": "testnet",
+            "lastupdated":"2022-12-05t03:42:00.123Z",
+            "rpcUptime": "100",
+            "wsUptime": "100",
+            "insightUptime": "100",
+            "tmWsUrl": "wss://test-tm-api.carbon.network",
+            "creator": {
+                "description": "These are contact details of the creator",
+                "name": "This is a name",
+                "telegram": "thisis_a_username",
+                "email": "example@example.com"
+            }
         }
     ]
 }
