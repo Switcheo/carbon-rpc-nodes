@@ -51,34 +51,34 @@
                 "nodeId": {
                     "type": "string",
                     "description": "The unique nodeId of the node.",
-                    "pattern": "/^\\w{5,32}$/"
+                    "pattern": "^\\w{5,32}$"
                 },
                 "rpcUrl": {
                     "type": "string",
                     "description": "The RPC Url of the node",
-                    "pattern": "/^https:\/\/.+/"
+                    "pattern": "^https:\/\/.+"
                 },
                 "wsUrl": {
                     "type": "string",
                     "description": "The WS Url of the node",
-                    "pattern": "/^wss:\/\/.+\/ws$/"
+                    "pattern": "^wss:\/\/.+\/ws$"
                 },
                 "faucetUrl": {
                     "type": "string",
                     "description": "The Faucet URL of the node",
                     "default": "",
-                    "pattern": "/$|^https:\/\/.+/"
+                    "pattern": "$|^https:\/\/.+"
                 },
                 "insightsUrl": {
                     "type": "string",
                     "description": "The Insights URL of the node",
                     "default": "",
-                    "pattern": "/$|^https:\/\/.+/"
+                    "pattern": "$|^https:\/\/.+"
                 },
                 "restUrl": {
                     "type": "string",
                     "description": "The REST URL of the node",
-                    "pattern": "/^https:\/\/.+/"
+                    "pattern": "^https:\/\/.+"
                 },
                 "moniker": {
                     "type": "string",
@@ -101,23 +101,23 @@
                 "rpcUptime": {
                     "type": "string",
                     "description": "The string representation of number",
-                    "pattern": "/^(\\d+(\\.\\d{0,2})?|\\.?\\d{1,2})$/"
+                    "pattern": "^(\\d+(\\.\\d{0,2})?|\\.?\\d{1,2})$"
                 },
                 "wsUptime": {
                     "type": "string",
                     "description": "The string representation of number",
-                    "pattern": "/^(\\d+(\\.\\d{0,2})?|\\.?\\d{1,2})$/"
+                    "pattern": "^(\\d+(\\.\\d{0,2})?|\\.?\\d{1,2})$"
                 },
                 "insightUptime": {
                     "type": "string",
                     "description": "The string representation of number",
-                    "pattern": "/^(\\d+(\\.\\d{0,2})?|\\.?\\d{1,2})$/"
+                    "pattern": "^(\\d+(\\.\\d{0,2})?|\\.?\\d{1,2})$"
                 },
                 "tmWsUrl": {
                     "type": "string",
                     "description": "The URL for Tendermint websocket with the pattern wss://<rpcUrl domain>/.",
                     "default": "",
-                    "pattern": "/^wss:\/\/.+/"
+                    "pattern": "^wss:\/\/.+"
                 },
                 "creator": {
                     "type": "object",
@@ -134,7 +134,7 @@
                         "telegram": {
                             "type": "string",
                             "description": "The telegram handle of the creator (without @)",
-                            "pattern": "/^\\w{5,32}$/"
+                            "pattern": "^\\w{5,32}$"
                         },
                         "email": {
                             "type": "string",
