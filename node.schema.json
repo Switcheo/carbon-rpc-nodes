@@ -50,55 +50,74 @@
                 },
                 "nodeId": {
                     "type": "string",
-                    "description": "The nodeId of the node"
+                    "description": "The unique nodeId of the node.",
+                    "pattern": "/^\\w{5,32}$/"
                 },
-                "prcUrl": {
+                "rpcUrl": {
                     "type": "string",
-                    "description": "The PRC Url of the node"
+                    "description": "The RPC Url of the node",
+                    "pattern": "/^https:\/\/.+/"
                 },
                 "wsUrl": {
                     "type": "string",
-                    "description": "The WS Url of the node"
+                    "description": "The WS Url of the node",
+                    "pattern": "/^wss:\/\/.+\/ws$/"
                 },
                 "faucetUrl": {
                     "type": "string",
-                    "description": "The Faucet URL of the node"
+                    "description": "The Faucet URL of the node",
+                    "default": "",
+                    "pattern": "/$|^https:\/\/.+/"
                 },
                 "insightsUrl": {
                     "type": "string",
-                    "description": "The Insights URL of the node"
+                    "description": "The Insights URL of the node",
+                    "default": "",
+                    "pattern": "/$|^https:\/\/.+/"
                 },
                 "restUrl": {
                     "type": "string",
-                    "description": "The REST URL of the node"
+                    "description": "The REST URL of the node",
+                    "pattern": "/^https:\/\/.+/"
                 },
                 "moniker": {
                     "type": "string",
-                    "description": "The moniker of the node"
+                    "description": "The display name of the node"
                 },
                 "appBuild": {
                     "type": "string",
-                    "description": "The app build of the node"
+                    "description": "The app build of the node",
+                    "enum": [
+                        "mainnet",
+                        "testnet",
+                        "devnet"
+                    ]
                 },
                 "lastupdated": {
                     "type": "string",
-                    "description": "The string representation of timestamp"
+                    "description": "The string representation of timestamp in the format yyyy-MM-ddTHH:mm:ssZ (RFC3339)",
+                    "format": "date-time"
                 },
                 "rpcUptime": {
                     "type": "string",
-                    "description": "The string representation of number"
+                    "description": "The string representation of number",
+                    "pattern": "/^(\\d+(\\.\\d{0,2})?|\\.?\\d{1,2})$/"
                 },
                 "wsUptime": {
                     "type": "string",
-                    "description": "The string representation of number"
+                    "description": "The string representation of number",
+                    "pattern": "/^(\\d+(\\.\\d{0,2})?|\\.?\\d{1,2})$/"
                 },
                 "insightUptime": {
                     "type": "string",
-                    "description": "The string representation of number"
+                    "description": "The string representation of number",
+                    "pattern": "/^(\\d+(\\.\\d{0,2})?|\\.?\\d{1,2})$/"
                 },
                 "tmWsUrl": {
                     "type": "string",
-                    "description": ""
+                    "description": "The URL for Tendermint websocket with the pattern wss://<rpcUrl domain>/.",
+                    "default": "",
+                    "pattern": "/^wss:\/\/.+/"
                 },
                 "creator": {
                     "type": "object",
@@ -114,7 +133,8 @@
                         },
                         "telegram": {
                             "type": "string",
-                            "description": "The telegram handle of the creator (without @)"
+                            "description": "The telegram handle of the creator (without @)",
+                            "pattern": "/^\\w{5,32}$/"
                         },
                         "email": {
                             "type": "string",
@@ -122,7 +142,7 @@
                             "format": "email",
                             "pattern": "^\\S+@\\S+\\.\\S+$",
                             "minLength": 6,
-                            "maxLength": 127
+                            "maxLength": 254
                         }
                     }
                 }
