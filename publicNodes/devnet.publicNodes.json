@@ -2,25 +2,23 @@
     "network": "devnet",
     "nodes": [
         {
-            "description": "This is a string",
-            "nodeId": "This is a string",
-            "rpcUrl": "This is a string",
-            "wsUrl": "This is a string",
-            "faucetUrl": "This is a string",
-            "insightsUrl": "This is a string",
-            "restUrl": "This is a string",
-            "moniker": "This is a string",
-            "appBuild": "This is a string",
-            "lastupdated": "This is a string",
-            "rpcUptime": "This is a string",
-            "wsUptime": "This is a string",
-            "insightUptime": "This is a string",
-            "tmWsUrl": "This is a string",
+            "description": "This is an example of accurate node details",
+            "nodeId": "dev1",
+            "rpcUrl": "https://dev-tm-api.carbon.network",
+            "wsUrl": "wss://dev-ws-api.carbon.network/ws",
+            "faucetUrl": "https://dev-faucet.carbon.network",
+            "insightsUrl": "https://dev-api-insights.carbon.network",
+            "restUrl": "https://dev-api.carbon.network",
+            "moniker": "devnet default 1",
+            "appBuild": "devnet",
+            "lastupdated": "2022-07-04T02:43:00.129Z",
+            "rpcUptime": "100",
+            "wsUptime": "95",
+            "insightUptime": "98",
+            "tmWsUrl": "wss://dev-tm-api.carbon.network",
             "creator": {
-                "description": "This is a string",
-                "name": "This is a string",
-                "telegram": "This is a string",
-                "email": "1@a.c"
+                "name": "This is another name",
+                "telegram": "thisis_another_username"
             }
         }
     ]
