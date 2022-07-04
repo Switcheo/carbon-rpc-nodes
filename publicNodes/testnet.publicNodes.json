@@ -22,6 +22,28 @@
                 "telegram": "thisis_a_username",
                 "email": "example@example.com"
             }
+        },
+        {
+            "description": "This is an example of accurate node details",
+            "nodeId": "tes!t",
+            "rpcUrl": "",
+            "wsUrl": "wss://test-ws-api.carbon.network",
+            "faucetUrl": "https://test-faucet.carbon.network",
+            "insightsUrl": "https://",
+            "restUrl": "https://test-api.carbon.network",
+            "moniker": "testnet default 1",
+            "appBuild": "test",
+            "lastupdated": "2022-07-01T03:42:00.123",
+            "rpcUptime": "",
+            "wsUptime": ".23",
+            "insightUptime": "-3.2",
+            "tmWsUrl": "test-tm-api.carbon.network",
+            "creator": {
+                "description": "These are contact details of the creator",
+                "name": "name",
+                "telegram": "this.isausername",
+                "email": "thisisanemail"
+            }
         }
     ]
 }

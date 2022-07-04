@@ -20,6 +20,24 @@
                 "telegram": "thisisausername",
                 "email": "myemail@example.com"
             }
+        },
+        {
+            "nodeId": "main",
+            "rpcUrl": "https://xx-tm-api.carbon.network",
+            "wsUrl": "xx-ws-api.carbon.network/ws",
+            "insightsUrl": "testurl",
+            "restUrl": "https://",
+            "appBuild": "mainnet",
+            "lastupdated": "2022/07/01T03:42Z",
+            "rpcUptime": "00",
+            "wsUptime": "103",
+            "insightUptime": "99.993",
+            "tmWsUrl": "ws://xx-tm-api.carbon.network",
+            "creator": {
+                "name": "This is a name",
+                "telegram": "thisisausernamethatshouldnottbeaccepted",
+                "email": "a@gmail"
+            }
         }
     ]
 }

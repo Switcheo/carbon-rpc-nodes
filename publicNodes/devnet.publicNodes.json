@@ -20,6 +20,27 @@
                 "name": "This is another name",
                 "telegram": "thisis_another_username"
             }
+        },
+        {
+            "description": "This is an example of accurate node details",
+            "nodeId": "devnet_1",
+            "rpcUrl": "https://dev-tm-api.carbon.network",
+            "wsUrl": "wss://dev-ws-api.carbon.network/ws",
+            "faucetUrl": "https://dev-faucet.carbon.network",
+            "insightsUrl": "https://dev-api-insights.carbon.network",
+            "restUrl": "https://dev-api.carbon.network",
+            "moniker": "devnet default 2",
+            "appBuild": "",
+            "lastupdated": "22-07-04T02:43:00.129Z",
+            "rpcUptime": "094.5",
+            "wsUptime": "91.",
+            "insightUptime": "1000",
+            "tmWsUrl": "wss://dev-tm-api.carbon.network",
+            "creator": {
+                "name": "This is another name",
+                "telegram": "@thisisinvalid",
+                "email": "a@b.c"
+            }
         }
     ]
 }
