@@ -15,4 +15,4 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           json_schema: ./node.schema.json
-          json_path_pattern: .*publicNodes.json$
+          json_path_pattern: ^configs\/.*(\.json)$
