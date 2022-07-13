@@ -1,6 +1,7 @@
 {
-    "network": {
-        "type": "newNetwork"
-    },
-    "nodes": []
+    "network": "devnet",
+    "nodes": [[
+        "Stupid array of strings",
+        "here's another string"
+    ]]
 }
