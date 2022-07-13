@@ -1,7 +1,4 @@
 {
     "network": "devnet",
-    "nodes": [[
-        "Stupid array of strings",
-        "here's another string"
-    ]]
+    "nodes": ["Here's a stupid string"]
 }
