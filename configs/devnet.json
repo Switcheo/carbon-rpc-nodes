@@ -1,4 +1,6 @@
 {
-    "network": null,
-    "nodes": ["Here's a stupid string"]
+    "network": "devnet",
+    "nodes": [{
+        "nodeId": "thisisastring",
+    }]
 }
