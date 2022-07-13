@@ -2,5 +2,6 @@
     "network": "devnet",
     "nodes": [{
         "nodeId": "thisisastring",
+        rpcUrl: ""
     }]
 }
