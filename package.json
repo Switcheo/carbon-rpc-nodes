@@ -1,0 +1,14 @@
+{
+  "name": "carbon-rpc-nodes",
+  "version": "1.0.0",
+  "description": "carbon-rpc-nodes is a public repository to allow frontends to fetch metadata associated with Carbon nodes.",
+  "repository": "git@github.com:Switcheo/carbon-rpc-nodes.git",
+  "author": "Switcheo <engineering@switcheo.network>",
+  "license": "MIT",
+  "scripts": {
+    "validate": "pajv validate -s node.schema.json -d \"configs/*.json\" --verbose"
+  },
+  "dependencies": {
+    "pajv": "^1.2.0"
+  }
+}

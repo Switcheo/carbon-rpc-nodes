@@ -1,5 +1,4 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
     "title": "Node Lists",
     "description": "Node Lists allow frontends to fetch metadata associated with Carbon nodes.",
     "type": "object",
