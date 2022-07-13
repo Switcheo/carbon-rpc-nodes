@@ -94,8 +94,12 @@ Remember to add a comma (`,`) after the previous element in the array.
 4. Create a Pull Request to merge your branch into `master`, and wait for a review.
 
 ## How to Validate the JSON Files on Command Line
-In the root of your `carbon-rpc-nodes` local repository, run the following command:
-```
+In the root of your `carbon-rpc-nodes` local repository, run the following in your command line:
+```bash
+# install dependencies
+yarn
+
+# run validate command
 yarn validate
 ```
 You should see the following output if all the `<network>.json` files have passed the validation test:
