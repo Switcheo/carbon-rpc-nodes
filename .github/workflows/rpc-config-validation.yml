@@ -2,7 +2,6 @@ on:
   pull_request:
     branches:
       - master
-      - 'feat/schema-command-line'
 name: Pull request workflow
 jobs:
   validate_nodes:
