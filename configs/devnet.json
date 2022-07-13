@@ -1,4 +1,4 @@
 {
-    "network": "devnet",
+    "network": null,
     "nodes": ["Here's a stupid string"]
 }
