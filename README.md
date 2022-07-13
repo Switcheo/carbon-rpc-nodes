@@ -35,7 +35,7 @@ An example node JSON follows the structure below:
 }
 ```
 
-## How to add node details
+## How to Add Node Details
 1. Open the folder `configs`.
 2. Depending on the network, choose `<network>.json`. For example, pick `testnet.json` if you wish to add a node in ***testnet***.
 3. Add the node details by adding another element in the nodes array according to the structure above. For example:
@@ -92,3 +92,16 @@ An example node JSON follows the structure below:
 Remember to add a comma (`,`) after the previous element in the array.
 
 4. Create a Pull Request to merge your branch into `master`, and wait for a review.
+
+## How to Validate the JSON Files on Command Line
+In the root of your `carbon-rpc-nodes` local repository, run the following command:
+```
+yarn validate
+```
+You should see the following output if all the `<network>.json` files have passed the validation test:
+```
+> pajv validate -s node.schema.json -d "configs/*.json" --verbose
+configs/devnet.json valid
+configs/mainnet.json valid
+configs/testnet.json valid
+```
