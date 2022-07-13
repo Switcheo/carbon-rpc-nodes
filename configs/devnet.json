@@ -1,4 +1,6 @@
 {
-    "network": [],
+    "network": {
+        "type": "newNetwork"
+    },
     "nodes": []
 }
