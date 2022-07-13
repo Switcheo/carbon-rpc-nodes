@@ -65,13 +65,19 @@
                     "type": "string",
                     "description": "The Faucet URL of the node",
                     "default": "",
-                    "pattern": "$|^https:\/\/.+"
+                    "oneOf": [
+                        { "minLength": 0, "maxLength": 0 },
+                        { "pattern": "^https:\/\/.+" }
+                    ]
                 },
                 "insightsUrl": {
                     "type": "string",
                     "description": "The Insights URL of the node",
                     "default": "",
-                    "pattern": "$|^https:\/\/.+"
+                    "oneOf": [
+                        { "minLength": 0, "maxLength": 0 },
+                        { "pattern": "^https:\/\/.+" }
+                    ]
                 },
                 "restUrl": {
                     "type": "string",
@@ -80,7 +86,8 @@
                 },
                 "moniker": {
                     "type": "string",
-                    "description": "The display name of the node"
+                    "description": "The display name of the node",
+                    "pattern": "^\\w{5,32}$"
                 },
                 "appBuild": {
                     "type": "string",
@@ -115,7 +122,6 @@
                 "tmWsUrl": {
                     "type": "string",
                     "description": "The URL for Tendermint websocket with the pattern wss://<rpcUrl domain>/.",
-                    "default": "",
                     "pattern": "^wss:\/\/.+"
                 },
                 "creator": {
