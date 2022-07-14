@@ -8,7 +8,7 @@
         "insightsUrl": "https://www",
         "restUrl": "https://w",
         "moniker": "thisisa_string",
-        "appBuild": "testnet",
+        "appBuild": "devnet",
         "lastupdated": "2022-07-14T10:00:00.000Z",
         "rpcUptime": "0.32",
         "wsUptime": "0",
