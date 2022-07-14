@@ -8,19 +8,11 @@ jobs:
   validate_nodes:
     name: Validate nodes
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [12.22.12]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-
       - name: Validate nodes schema
         uses: Adzz/jest_test_action@v1.0.0
         with:
-          command: validate
+          command: validate --ignore-engines
