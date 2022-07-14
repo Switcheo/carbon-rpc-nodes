@@ -13,6 +13,6 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Validate nodes schema
-        uses: Adzz/jest_test_action@v1.0.0
+        uses: borales/actions-yarn@v3.0.0
         with:
-          command: validate --ignore-engines
+          command: validate
