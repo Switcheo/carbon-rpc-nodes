@@ -1,4 +1,42 @@
 {
     "network": "testnet",
-    "nodes": []
+    "nodes": [{
+        "nodeId": "thisisastring",
+        "rpcUrl": "https://ww",
+        "wsUrl": "wss://sdf/ws",
+        "faucetUrl": "https://www",
+        "insightsUrl": "https://www",
+        "restUrl": "https://w",
+        "moniker": "thisisa_string",
+        "appBuild": "testnet",
+        "lastupdated": "2022-07-14T10:00:00.000Z",
+        "rpcUptime": "0.32",
+        "wsUptime": "0",
+        "insightUptime": "0",
+        "tmWsUrl": "wss://w",
+        "creator": {
+            "name": "Trevor Bingley",
+            "telegram": "thisisahandle",
+            "email": "trevor.bingley@a.com"
+        }
+    }, {
+        "nodeId": "thisisastring",
+        "rpcUrl": "https://ww",
+        "wsUrl": "wss://sdf/ws",
+        "faucetUrl": "https://www",
+        "insightsUrl": "https://www",
+        "restUrl": "https://w",
+        "moniker": "thisisa_string",
+        "appBuild": "testnet",
+        "lastupdated": "2022-07-14T10:00:00.000Z",
+        "rpcUptime": "0.32",
+        "wsUptime": "0",
+        "insightUptime": "0",
+        "tmWsUrl": "wss://w",
+        "creator": {
+            "name": "Trevor Bingley",
+            "telegram": "thisisahandle",
+            "email": "trevor.bingley@a.com"
+        }
+    }]
 }
