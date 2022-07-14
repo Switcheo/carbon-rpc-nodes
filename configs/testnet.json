@@ -20,13 +20,13 @@
             "email": "trevor.bingley@a.com"
         }
     }, {
-        "nodeId": "thisisastring",
+        "nodeId": "thisisastring2",
         "rpcUrl": "https://ww",
         "wsUrl": "wss://sdf/ws",
         "faucetUrl": "https://www",
         "insightsUrl": "https://www",
         "restUrl": "https://w",
-        "moniker": "thisisa_string",
+        "moniker": "thisisa_string2",
         "appBuild": "testnet",
         "lastupdated": "2022-07-14T10:00:00.000Z",
         "rpcUptime": "0.32",
