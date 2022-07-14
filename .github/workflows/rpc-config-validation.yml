@@ -20,4 +20,9 @@ jobs:
       - name: Validate nodes schema
         uses: borales/actions-yarn@v3.0.0
         with:
-          cmd: validate
+          cmd: validate # validate using json schema
+          
+      - name: Test appBuild and ids
+        uses: borales/actions-yarn@v3.0.0
+        with:
+          cmd: check-entries # perform other validations
