@@ -8,10 +8,20 @@ jobs:
     name: Validate nodes
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Validate nodes schema
-        uses: snapcart/json-schema-validator@v1.0.0
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install Dependencies
+        uses: borales/actions-yarn@v3.0.0
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          json_schema: ./node.schema.json
-          json_path_pattern: ^configs\/.*(\.json)$
+          cmd: install --ignore-engines # will run `yarn install` command
+
+      - name: Validate nodes schema
+        uses: borales/actions-yarn@v3.0.0
+        with:
+          cmd: validate # validate using json schema
+          
+      - name: Test appBuild and ids
+        uses: borales/actions-yarn@v3.0.0
+        with:
+          cmd: check-entries # perform other validations
