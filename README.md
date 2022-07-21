@@ -20,9 +20,6 @@ An example node JSON follows the structure below:
             "moniker": "testnet default 1",
             "appBuild": "testnet",
             "lastupdated": "2022-07-01T03:42:00.123Z",
-            "rpcUptime": "100",
-            "wsUptime": "100",
-            "insightUptime": "100",
             "tmWsUrl": "wss://test-tm-api.carbon.network",
             "creator": {
                 "description": "These are contact details of the creator",
@@ -38,7 +35,7 @@ An example node JSON follows the structure below:
 ## How to Add Node Details
 1. Open the folder `configs`.
 2. Depending on the network, choose `<network>.json`. For example, pick `testnet.json` if you wish to add a node in ***testnet***.
-3. Add the node details by adding another element in the nodes array according to the structure above. For example:
+3. Add the node details by adding another element to the **bottom** of the nodes array according to the structure above. For example:
 
 ```
 "nodes": [
@@ -53,9 +50,6 @@ An example node JSON follows the structure below:
         "moniker": "testnet default 1",
         "appBuild": "testnet",
         "lastupdated": "2022-07-01T03:42:00.123Z",
-        "rpcUptime": "100",
-        "wsUptime": "100",
-        "insightUptime": "100",
         "tmWsUrl": "wss://test-tm-api.carbon.network",
         "creator": {
             "description": "These are contact details of the creator",
@@ -75,9 +69,6 @@ An example node JSON follows the structure below:
         "moniker": "testnet default 2",
         "appBuild": "testnet",
         "lastupdated": "2022-07-04T03:42:00.123Z",
-        "rpcUptime": "100",
-        "wsUptime": "100",
-        "insightUptime": "100",
         "tmWsUrl": "wss://test-tm-api.carbon.network",
         "creator": {
             "description": "These are contact details of the creator",
