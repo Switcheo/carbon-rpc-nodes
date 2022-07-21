@@ -87,7 +87,7 @@
                 "moniker": {
                     "type": "string",
                     "description": "The display name of the node",
-                    "pattern": "^\\w{5,32}$"
+                    "pattern": "^[\\w ]{5,32}$"
                 },
                 "appBuild": {
                     "type": "string",
