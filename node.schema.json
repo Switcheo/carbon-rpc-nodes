@@ -35,9 +35,6 @@
                 "moniker",
                 "appBuild",
                 "lastupdated",
-                "rpcUptime",
-                "wsUptime",
-                "insightUptime",
                 "tmWsUrl",
                 "creator"
             ],
@@ -53,17 +50,17 @@
                 },
                 "rpcUrl": {
                     "type": "string",
-                    "description": "The RPC Url of the node",
+                    "description": "The Tendermint RPC endpoint pointing to port 26657",
                     "pattern": "^https:\/\/.+"
                 },
                 "wsUrl": {
                     "type": "string",
-                    "description": "The WS Url of the node",
+                    "description": "The Carbon Websocket endpoint pointing to port 5000",
                     "pattern": "^wss:\/\/.+\/ws$"
                 },
                 "faucetUrl": {
                     "type": "string",
-                    "description": "The Faucet URL of the node",
+                    "description": "The endpoint URL for Carbon Faucet",
                     "default": "",
                     "oneOf": [
                         { "minLength": 0, "maxLength": 0 },
@@ -72,7 +69,7 @@
                 },
                 "insightsUrl": {
                     "type": "string",
-                    "description": "The Insights URL of the node",
+                    "description": "The endpoint URL for Carbon Insights",
                     "default": "",
                     "oneOf": [
                         { "minLength": 0, "maxLength": 0 },
@@ -81,7 +78,7 @@
                 },
                 "restUrl": {
                     "type": "string",
-                    "description": "The REST URL of the node",
+                    "description": "The Carbon Rest API endpoint pointing to port 1317",
                     "pattern": "^https:\/\/.+"
                 },
                 "moniker": {
@@ -91,7 +88,7 @@
                 },
                 "appBuild": {
                     "type": "string",
-                    "description": "The app build of the node",
+                    "description": "The network of the node",
                     "enum": [
                         "mainnet",
                         "testnet",
@@ -105,24 +102,9 @@
                     "default": "2022-10-07T08:00:00.000Z",
                     "pattern": "^(?:[1-9][0-9]{3}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-8])|(?:0[13-9]|1[0-2])-(?:29|30)|(?:0[13578]|1[02])-31)|(?:[1-9][0-9](?:0[48]|[2468][048]|[13579][26])|(?:[2468][048]|[13579][26])00)-02-29)(t|T)(?:[01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9].[0-9]{3}(?:z|Z|[+-][01][0-9]:[0-5][0-9])$"
                 },
-                "rpcUptime": {
-                    "type": "string",
-                    "description": "The string representation of number (up to 2 d.p.)",
-                    "pattern": "^((\\d{1,2})(\\.\\d{0,2})?|\\.?\\d{1,2}|100)$"
-                },
-                "wsUptime": {
-                    "type": "string",
-                    "description": "The string representation of number (up to 2 d.p.)",
-                    "pattern": "^((\\d{1,2})(\\.\\d{0,2})?|\\.?\\d{1,2}|100)$"
-                },
-                "insightUptime": {
-                    "type": "string",
-                    "description": "The string representation of number (up to 2 d.p.)",
-                    "pattern": "^((\\d{1,2})(\\.\\d{0,2})?|\\.?\\d{1,2}|100)$"
-                },
                 "tmWsUrl": {
                     "type": "string",
-                    "description": "The URL for Tendermint websocket with the pattern wss://<rpcUrl domain>/.",
+                    "description": "The Tendermint Websocket endpoint pointing to port 26657 (follows the pattern wss://<rpcUrl domain>/).",
                     "pattern": "^wss:\/\/.+"
                 },
                 "creator": {
@@ -133,6 +115,10 @@
                         "telegram"
                     ],
                     "properties": {
+                        "description": {
+                            "type": "string",
+                            "description": "[OPTIONAL] A short description of the node creator"
+                        },
                         "name": {
                             "type": "string",
                             "description": "The name of the creator",

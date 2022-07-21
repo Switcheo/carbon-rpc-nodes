@@ -26,9 +26,6 @@ interface NodeItem {
   moniker: string;
   appBuild: Network;
   lastupdated: string;
-  rpcUptime: string;
-  wsUptime: string;
-  insightUptime: string;
   tmWsUrl: string;
   creator: NodeCreator;
 }

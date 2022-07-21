@@ -20,9 +20,6 @@ An example node JSON follows the structure below:
             "moniker": "testnet default 1",
             "appBuild": "testnet",
             "lastupdated": "2022-07-01T03:42:00.123Z",
-            "rpcUptime": "100",
-            "wsUptime": "100",
-            "insightUptime": "100",
             "tmWsUrl": "wss://test-tm-api.carbon.network",
             "creator": {
                 "description": "These are contact details of the creator",
@@ -38,8 +35,9 @@ An example node JSON follows the structure below:
 ## How to Add Node Details
 1. Open the folder `configs`.
 2. Depending on the network, choose `<network>.json`. For example, pick `testnet.json` if you wish to add a node in ***testnet***.
-3. Add the node details by adding another element in the nodes array according to the structure above. For example:
+3. Add the node details in JSON format to the **bottom** of the nodes array. Please refer to the [RPC Node data structure](./.github/rpc-node/pr_template.md) for full details on what to include in the JSON.
 
+For example:
 ```
 "nodes": [
     {
@@ -53,9 +51,6 @@ An example node JSON follows the structure below:
         "moniker": "testnet default 1",
         "appBuild": "testnet",
         "lastupdated": "2022-07-01T03:42:00.123Z",
-        "rpcUptime": "100",
-        "wsUptime": "100",
-        "insightUptime": "100",
         "tmWsUrl": "wss://test-tm-api.carbon.network",
         "creator": {
             "description": "These are contact details of the creator",
@@ -75,9 +70,6 @@ An example node JSON follows the structure below:
         "moniker": "testnet default 2",
         "appBuild": "testnet",
         "lastupdated": "2022-07-04T03:42:00.123Z",
-        "rpcUptime": "100",
-        "wsUptime": "100",
-        "insightUptime": "100",
         "tmWsUrl": "wss://test-tm-api.carbon.network",
         "creator": {
             "description": "These are contact details of the creator",
