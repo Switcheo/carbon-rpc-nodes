@@ -1,4 +1,20 @@
 {
     "network": "mainnet",
-    "nodes": []
+    "nodes": [{
+        "nodeId":"mainnetdnode",
+        "rpcUrl":"https://tm-api.carbon.network/",
+        "wsUrl":"wss://ws-api.carbon.network/ws",
+        "tmWsUrl":"wss://tm-api.carbon.network/",
+        "faucetUrl":"",
+        "insightsUrl":"https://api-insights.carbon.network",
+        "restUrl":"https://api.carbon.network",
+        "moniker":"mainnet default 1",
+        "appBuild":"mainnet",
+        "lastupdated":"2022-07-25T04:22:00.284Z",
+        "creator": {
+            "name": "Switcheo Engineering",
+            "telegram": "switcheo",
+            "email": "engineering@switcheo.network"
+        }
+    }]
 }

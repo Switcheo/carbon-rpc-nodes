@@ -1,4 +1,20 @@
 {
     "network": "devnet",
-    "nodes": []
+    "nodes": [{
+        "nodeId": "dev1",
+        "rpcUrl": "https://dev-tm-api.carbon.network",
+        "wsUrl": "wss://dev-ws-api.carbon.network/ws",
+        "tmWsUrl": "wss://dev-tm-api.carbon.network",
+        "faucetUrl": "https://dev-faucet.carbon.network",
+        "insightsUrl": "https://dev-api-insights.carbon.network",
+        "restUrl": "https://dev-api.carbon.network",
+        "moniker": "devnet default 1",
+        "appBuild": "devnet",
+        "lastupdated": "2022-07-25T06:31:00.127Z",
+        "creator": {
+            "name": "Switcheo Engineering",
+            "telegram": "switcheo",
+            "email": "engineering@switcheo.network"
+        }
+    }]
 }
