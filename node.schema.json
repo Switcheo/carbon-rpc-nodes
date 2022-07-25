@@ -46,7 +46,7 @@
                 "nodeId": {
                     "type": "string",
                     "description": "The unique nodeId of the node.",
-                    "pattern": "^\\w{5,32}$"
+                    "pattern": "^\\w{4,32}$"
                 },
                 "rpcUrl": {
                     "type": "string",
