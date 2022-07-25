@@ -1,4 +1,20 @@
 {
     "network": "testnet",
-    "nodes": []
+    "nodes": [{
+        "nodeId": "test1",
+        "rpcUrl": "https://test-tm-api.carbon.network",
+        "wsUrl": "wss://test-ws-api.carbon.network/ws",
+        "tmWsUrl": "wss://test-tm-api.carbon.network",
+        "faucetUrl": "https://test-faucet.carbon.network",
+        "insightsUrl": "https://test-api-insights.carbon.network",
+        "restUrl": "https://test-api.carbon.network",
+        "moniker": "testnet default 1",
+        "appBuild": "testnet",
+        "lastupdated": "2022-07-25T06:29:00.300Z",
+        "creator": {
+            "name": "Switcheo Engineering",
+            "telegram": "switcheo",
+            "email": "engineering@switcheo.network"
+        }
+    }]
 }
