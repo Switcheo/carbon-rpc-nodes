@@ -32,6 +32,18 @@ An example node JSON follows the structure below:
 }
 ```
 
+## Prerequisites
+Take note of the following requirements to enable an easy flow and navigation through various nodes on the blockchain.
+
+### General Requirements
+- A higher processing system may be required to run the node as users may experience increased traffic.
+- Nodes metrics such (e.g. uptime of rpcUrl/wsUrl) will be collected. Users must regularly check and update their endpoints (e.g. update URLs consistently to avoid expiry) in order to attain a good node rating.
+- You may experience Denial of Service from time to time if high traffic is experienced on the network.
+- Do not list your personal info (e.g. Telegram and Email) to avoid potential spam. We recommend using separate accounts for the same.
+
+### Technical Requirements
+Click [here](https://github.com/Switcheo/carbon-bootstrap/blob/master/STARGATE.md#node-requirements) to know more about the technical requirements.
+
 ## How to Add Node Details
 1. Open the folder `configs`.
 2. Depending on the network, choose `<network>.json`. For example, pick `testnet.json` if you wish to add a node in ***testnet***.
