@@ -127,7 +127,7 @@
                         "telegram": {
                             "type": "string",
                             "description": "The telegram account link of the creator (follows the pattern https://t.me/<username>) ",
-                            "pattern": "^(https:\/\/t.me\/)(\\w{5,32}$)"
+                            "pattern": "^(https:\/\/t.me\/)\\w{5,32}$"
                         },
                         "email": {
                             "type": "string",
