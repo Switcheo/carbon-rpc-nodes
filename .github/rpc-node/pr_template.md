@@ -27,5 +27,5 @@ Please make sure to add to the **bottom** of the array.
 |---|---|---|---|---|
 |`description`   |`string`   |false   |A short description of the node creator   |-   |
 |`name`   |`string`   |true   |The name of the creator   |-   |
-|`telegram`   |`string`   |true   |The telegram handle of the creator (without @)   |Should not include `@` symbol   |
+|`telegram`   |`string`   |true   |The telegram account link of the creator (follows the pattern https://t.me/<username>)   |Should not include `@` symbol   |
 |`email`   |`string`   |false   |The email address of the creator   |For contacting node creator if there are issues with said node   |
