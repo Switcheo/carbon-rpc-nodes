@@ -24,7 +24,7 @@ An example node JSON follows the structure below:
             "creator": {
                 "description": "These are contact details of the creator",
                 "name": "This is a name",
-                "telegram": "thisis_a_username",
+                "telegram": "https://t.me/thisis_a_username",
                 "email": "example@example.com"
             }
         }
@@ -67,7 +67,7 @@ For example:
         "creator": {
             "description": "These are contact details of the creator",
             "name": "This is a name",
-            "telegram": "thisis_a_username",
+            "telegram": "https://t.me/thisis_a_username",
             "email": "example@example.com"
         }
     }, // ADD THE NEW NODE HERE
@@ -86,7 +86,7 @@ For example:
         "creator": {
             "description": "These are contact details of the creator",
             "name": "Another name",
-            "telegram": "thisisausernametoo",
+            "telegram": "https://t.me/thisisausernametoo",
             "email": "testnet@example.com"
         }
     }
