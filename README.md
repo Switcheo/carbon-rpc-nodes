@@ -1,11 +1,35 @@
-# carbon-rpc-nodes
+# Carbon Public RPC / API Nodes
 
-This repository of node lists allows frontends to fetch metadata associated with Carbon nodes.
+This repository contains a list of public RPC / API nodes ran by the community.
+
+This allows dApps on Carbon to fetch endpoint information and other metadata associated with the nodes.
+
+## Prerequisites
+
+Take note of the following requirements to enable an easy flow and navigation through various nodes on the blockchain.
+
+### Node Hardware Requirements
+
+- Please ensure your node **exceeds** the recommended hardware specifications [here](https://app.gitbook.com/o/-MecgzmldTTB0xnM-BPO/s/-MW8gDIAbhDIzD88opzA/introduction/getting-started/carbon-node-setup/mainnet#node-requirements) as the node will be heavily accessed.
+
+### General Requirements
+
+- Your node **must** run with the `persistence` service (pSQL) enabled
+- All endpoint / ports given in the specified configuration must be publicly accessible (except for `insightsUrl`)
+- Nodes metrics such (e.g. uptime of `rpcUrl` / `wsUrl`) will be regularly sampled. Node providers must ensure a good node rating to be considered.
+
+### Other Considerations
+
+- You may experience Denial of Service from time to time if high traffic is experienced on the network.
+- Do not list your personal info (e.g. Telegram and Email) to avoid potential spam. We recommend using separate accounts for the same.
+
+## Adding Your Node Details
+
 The node JSON schema can be found [here](/node.schema.json).
 
 An example node JSON follows the structure below:
 
-```
+```json
 {
     "network": "testnet"
     "nodes": [
@@ -32,73 +56,45 @@ An example node JSON follows the structure below:
 }
 ```
 
-## Prerequisites
-Take note of the following requirements to enable an easy flow and navigation through various nodes on the blockchain.
-
-### General Requirements
-- A higher processing system may be required to run the node as users may experience increased traffic.
-- Nodes metrics such (e.g. uptime of rpcUrl/wsUrl) will be collected. Users must regularly check and update their endpoints (e.g. update URLs consistently to avoid expiry) in order to attain a good node rating.
-- You may experience Denial of Service from time to time if high traffic is experienced on the network.
-- Do not list your personal info (e.g. Telegram and Email) to avoid potential spam. We recommend using separate accounts for the same.
-
-### Technical Requirements
-Click [here](https://github.com/Switcheo/carbon-bootstrap/blob/master/STARGATE.md#node-requirements) to know more about the technical requirements.
-
-## How to Add Node Details
-1. Open the folder `configs`.
+1. Navigate to the `configs` fodler
 2. Depending on the network, choose `<network>.json`. For example, pick `testnet.json` if you wish to add a node in ***testnet***.
-3. Add the node details in JSON format to the **bottom** of the nodes array. Please refer to the [RPC Node data structure](./.github/rpc-node/pr_template.md) for full details on what to include in the JSON.
+3. Add the node details in JSON format to the **bottom** of the nodes array. Please refer to the [RPC Node data structure](./.github/rpc-node/pr_template.md) for full details on what to include in the JSON. For example:
+              
+        "nodes": [
+            {
+                "description": "This is an example of accurate node details",
+                "nodeId": "testnet1",
+                "rpcUrl": "https://test-tm-api.carbon.network",
+                "wsUrl": "wss://test-ws-api.carbon.network/ws",
+                ...
+                }
+            },
+            {
+                "description": "ADD YOUR NEW NODE HERE",
+                "nodeId": "testnet2",
+                "rpcUrl": "https://new.node",
+                "wsUrl": "wss://new.node/ws",
+                "faucetUrl": "https://new.node",
+                ...
+                "creator": {
+                    "description": "Your contact details",
+                    "name": "Your name",
+                    "telegram": "https://t.me/yourTGusername",
+                    "email": "testnet@example.com"
+                }
+            }
+        ]
+        
 
-For example:
-```
-"nodes": [
-    {
-        "description": "This is an example of accurate node details",
-        "nodeId": "testnet1",
-        "rpcUrl": "https://test-tm-api.carbon.network",
-        "wsUrl": "wss://test-ws-api.carbon.network/ws",
-        "faucetUrl": "https://test-faucet.carbon.network",
-        "insightsUrl": "https://test-api-insights.carbon.network",
-        "restUrl": "https://test-api.carbon.network",
-        "moniker": "testnet default 1",
-        "appBuild": "testnet",
-        "lastupdated": "2022-07-01T03:42:00.123Z",
-        "tmWsUrl": "wss://test-tm-api.carbon.network",
-        "creator": {
-            "description": "These are contact details of the creator",
-            "name": "This is a name",
-            "telegram": "https://t.me/thisis_a_username",
-            "email": "example@example.com"
-        }
-    }, // ADD THE NEW NODE HERE
-    {
-        "description": "This is another example of accurate node details",
-        "nodeId": "testnet2",
-        "rpcUrl": "https://test-tm-api.carbon.network",
-        "wsUrl": "wss://test-ws-api.carbon.network/ws",
-        "faucetUrl": "https://test-faucet.carbon.network",
-        "insightsUrl": "https://test-api-insights.carbon.network",
-        "restUrl": "https://test-api.carbon.network",
-        "moniker": "testnet default 2",
-        "appBuild": "testnet",
-        "lastupdated": "2022-07-04T03:42:00.123Z",
-        "tmWsUrl": "wss://test-tm-api.carbon.network",
-        "creator": {
-            "description": "These are contact details of the creator",
-            "name": "Another name",
-            "telegram": "https://t.me/thisisausernametoo",
-            "email": "testnet@example.com"
-        }
-    }
-]
-```
+5. [Validate your submission](validate-your-submission)
+6. Create a pull request to `master`, and wait for a review
 
-Remember to add a comma (`,`) after the previous element in the array.
+### Validate Your Submission
 
-4. Create a Pull Request to merge your branch into `master`, and wait for a review.
+Please validate your modified JSON configuration files before opening a pull request via the following steps.
 
-## How to Validate the JSON Files on Command Line
-In the root of your `carbon-rpc-nodes` local repository, run the following in your command line:
+In the root of your `carbon-rpc-nodes` local repository, run the following commands:
+
 ```bash
 # install dependencies
 yarn
