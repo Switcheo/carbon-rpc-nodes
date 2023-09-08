@@ -10,7 +10,7 @@ Take note of the following requirements to enable an easy flow and navigation th
 
 ### Node Hardware Requirements
 
-- Please ensure your node **exceeds** the recommended hardware specifications [here](https://app.gitbook.com/o/-MecgzmldTTB0xnM-BPO/s/-MW8gDIAbhDIzD88opzA/introduction/getting-started/carbon-node-setup/mainnet#node-requirements) as the node will be heavily accessed.
+- Please ensure your node **exceeds** the recommended hardware specifications [here](https://guide.carbon.network/introduction/getting-started/carbon-node-setup/mainnet#node-requirements) as the node will be heavily accessed.
 
 ### General Requirements
 
