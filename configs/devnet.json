@@ -8,6 +8,7 @@
         "faucetUrl": "https://dev-faucet.carbon.network",
         "insightsUrl": "https://dev-api-insights.carbon.network",
         "restUrl": "https://dev-api.carbon.network",
+        "grpcWebUrl": "https://dev-grpc-web.carbon.network",
         "moniker": "devnet default 1",
         "appBuild": "devnet",
         "lastupdated": "2022-07-25T06:31:00.127Z",
