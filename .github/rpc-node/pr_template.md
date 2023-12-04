@@ -9,11 +9,12 @@ Please make sure to add to the **bottom** of the array.
 |---|---|---|---|---|
 |`description`   |`string`   |false   |A short description of the node   |-  |
 |`nodeId`   |`string`   |true   |The unique nodeId of the node.   |Should only consist of the characters **A-Z, a-z, 0-9 and _**<br />Please make sure your `nodeId` input **does not match** other `nodeId` values in the JSON file   |
-|`rpcUrl`   |`string`   |true   |The Tendermint RPC endpoint pointing to port 26657    |[Info](https://docs.carbon.network/api-references/tendermint-rpc)   |
-|`wsUrl`   |`string`   |true   |The Carbon Websocket endpoint pointing to port 5000   |[Info](https://docs.carbon.network/api-references/carbon-websocket)   |
-|`restUrl`   |`string`   |true   |The Carbon Rest API endpoint pointing to port 1317   |[Info](https://docs.carbon.network/api-references/carbon-rpc)   |
+|`rpcUrl`   |`string`   |true   |The Tendermint RPC endpoint pointing to port 26657    |[Info](https://docs.carbon.network/api-docs/carbon-api)   |
+|`wsUrl`   |`string`   |true   |The Carbon Websocket endpoint pointing to port 5000   |[Info](https://docs.carbon.network/api-docs/carbon-websocket)   |
+|`restUrl`   |`string`   |true   |The Carbon Rest API endpoint pointing to port 1317   |[Info](https://docs.carbon.network/api-docs/carbon-api)   |
+|`grpcWebUrl`   |`string`   |true   |The Carbon GRPC-Web endpoint pointing to port 9091   |If not available, insert an empty string (i.e. `""`)<br />[Info](https://docs.carbon.network/api-docs/carbon-api)   |
 |`faucetUrl`   |`string`   |true   |The endpoint URL for Carbon Faucet   |Only available on `testnet`/`devnet`<br />If not available, insert an empty string (i.e. `""`)   |
-|`insightsUrl`   |`string`   |true   |The endpoint URL for Carbon Insights   |If not available, insert an empty string (i.e. `""`)<br />[Info](https://docs.carbon.network/api-references/carbon-insights)   |
+|`insightsUrl`   |`string`   |true   |The endpoint URL for Carbon Insights   |If not available, insert an empty string (i.e. `""`)<br />[Info](https://docs.carbon.network/api-docs/carbon-insights-api)   |
 |`moniker`   |`string`   |true   |The display name of the node   |Should only consist of the characters **A-Z, a-z, 0-9 and _**<br />Please make sure your `moniker` input **does not match** other `moniker` values in the JSON file    |
 |`appBuild`  |`string`   |true   |The network of the node   |Accepted Values: `mainnet \| testnet \| devnet`   |
 |`lastupdated`   |`string`   |true   |The last-updated timestamp   |Should be in the format `yyyy-MM-ddTHH:mm:ss.SSSZ`   |

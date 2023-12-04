@@ -41,6 +41,7 @@ An example node JSON follows the structure below:
             "faucetUrl": "https://test-faucet.carbon.network",
             "insightsUrl": "https://test-api-insights.carbon.network",
             "restUrl": "https://test-api.carbon.network",
+            "grpcWebUrl": "https://test-grpc-web.carbon.network",
             "moniker": "testnet default 1",
             "appBuild": "testnet",
             "lastupdated": "2022-07-01T03:42:00.123Z",

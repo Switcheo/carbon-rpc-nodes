@@ -27,6 +27,7 @@ interface NodeItem {
   appBuild: Network;
   lastupdated: string;
   tmWsUrl: string;
+  grpcWebUrl: string;
   creator: NodeCreator;
 }
 
