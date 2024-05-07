@@ -18,24 +18,6 @@
                 "telegram": "https://t.me/switcheo",
                 "email": "engineering@switcheo.network"
             }
-        },
-        {
-            "nodeId":"bhmainnetnode1",
-            "rpcUrl":"https://rpc.carbon.blockhunters.org/",
-            "wsUrl":"wss://carbon.blockhunters.org/ws",
-            "tmWsUrl":"wss://rpc.carbon.blockhunters.org/",
-            "faucetUrl":"",
-            "insightsUrl":"https://api-insights.carbon.network",
-            "restUrl":"https://rest.carbon.blockhunters.org",
-            "grpcWebUrl": "https://rest.carbon.blockhunters.org",
-            "moniker":"BlockHunters API Node",
-            "appBuild":"mainnet",
-            "lastupdated":"2022-08-10T15:00:00.284Z",
-            "creator": {
-                "name": "BlockHunters",
-                "telegram": "https://t.me/blockhuntersOrg",
-                "email": "tech@blockhunters.org"
-            }
         }
     ]
 }
